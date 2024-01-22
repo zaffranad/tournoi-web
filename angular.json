@@ -60,7 +60,8 @@
               "buildTarget": "tournoi-web:build:production"
             },
             "development": {
-              "buildTarget": "tournoi-web:build:development"
+              "buildTarget": "tournoi-web:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -91,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
